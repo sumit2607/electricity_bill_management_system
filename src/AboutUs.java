@@ -42,8 +42,23 @@ public class AboutUs extends JFrame implements ActionListener {
         t1.setBounds(20, 100, 450, 300);
         add(t1);
 
+        Font f1 = new Font("RALEWAY", Font.BOLD, 180);
+        setFont(f1);
+
+        Container container = this.getContentPane();
+        t1 = new TextArea();
+
+        JLabel l1 = new JLabel("About Project");
+        l1.setBounds(170, 10, 180, 80);
+        l1.setForeground(Color.red);
 
 
+        Font f2 = new Font("RALEWAY", Font.BOLD, 180);
+        setFont(f2);
+
+        setBounds(700, 220, 500, 500);
+
+        setVisible(true);
 
     }
 
