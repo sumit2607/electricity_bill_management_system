@@ -49,6 +49,7 @@ public class AboutUs extends JFrame implements ActionListener {
         t1 = new TextArea();
 
         JLabel l1 = new JLabel("About Project");
+        add(l1);
         l1.setBounds(170, 10, 180, 80);
         l1.setForeground(Color.red);
 
@@ -64,6 +65,14 @@ public class AboutUs extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        dispose();
 
+    }
+
+
+    public static void main(String[] args) {
+        AboutUs aboutUs = new AboutUs();
+        aboutUs.setVisible(true);
+        //new AboutUs().setVisible(true);
     }
 }
