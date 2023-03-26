@@ -14,8 +14,9 @@ public class AboutUs extends JFrame implements ActionListener {
 
     public AboutUs() {
         setLayout(null);
-        JButton b1 = new JButton();
-        b1.setBounds(180, 430, 120, 200);
+        JButton b1 = new JButton("Exit");
+        add(b1);
+        b1.setBounds(180, 430, 120, 20);
         b1.addActionListener(this);
 
         Font f = new Font("RALEWAY", Font.BOLD, 180);
@@ -37,13 +38,13 @@ public class AboutUs extends JFrame implements ActionListener {
                 "it saves human efforts and resources.";
 
 
-        TextArea t1 = new TextArea(s, 10, 40, Scrollbar.VERTICAL);
+        TextArea t1 = new TextArea(s, 10, 40, Scrollbar.HORIZONTAL);
         t1.setEditable(false);
         t1.setBounds(20, 100, 450, 300);
         add(t1);
 
-        Font f1 = new Font("RALEWAY", Font.BOLD, 180);
-        setFont(f1);
+        Font f1 = new Font("RALEWAY", Font.BOLD, 16);
+        t1.setFont(f1);
 
         Container container = this.getContentPane();
         t1 = new TextArea();
@@ -54,11 +55,11 @@ public class AboutUs extends JFrame implements ActionListener {
         l1.setForeground(Color.red);
 
 
-        Font f2 = new Font("RALEWAY", Font.BOLD, 180);
+        Font f2 = new Font("RALEWAY", Font.BOLD, 18);
         setFont(f2);
 
-        setBounds(700, 220, 500, 500);
-
+        setBounds(700, 220, 500, 550);
+        setLayout(null);
         setVisible(true);
 
     }
